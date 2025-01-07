@@ -94,7 +94,7 @@ func TestUpdate(t *testing.T) {
 	t.Run("new word", func(t *testing.T) {
 		word := "test"
 		definition := "this is just a test"
-		dictionary := Dictionary{word: definition}
+		dictionary := Dictionary{}
 
 		err := dictionary.Update(word, definition)
 
