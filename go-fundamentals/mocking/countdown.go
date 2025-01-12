@@ -31,6 +31,9 @@ func (d *DefaultSleeper) Sleep() {
 func Countdown(out io.Writer, sleeper Sleeper) {
 	for i := countdownStart; i > 0; i-- {
 		sleeper.Sleep()
+	}
+
+	for i := countdownStart; i > 0; i-- {
 		fmt.Fprintln(out, i)
 	}
 
