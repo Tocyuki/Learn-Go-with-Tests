@@ -86,5 +86,5 @@ func (s *SpyTime) Sleep(duration time.Duration) {
 }
 
 func (c ConfigurableSleeper) Sleep() {
-
+	c.sleep(c.duration)
 }
